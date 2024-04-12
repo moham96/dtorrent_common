@@ -1,9 +1,12 @@
 import 'dart:convert';
-import 'dart:developer';
 import 'dart:io';
 import 'dart:math' as math;
 
 import 'dart:typed_data';
+
+import 'package:logging/logging.dart';
+
+var _log = Logger('CompactAddress');
 
 /// Checks if you are awesome. Spoiler: you are.
 class CompactAddress {
@@ -108,7 +111,7 @@ class CompactAddress {
           l.add(a);
         }
       } catch (e) {
-        log('Parse IPv4 error:', error: e, name: 'COMMON LIB');
+        _log.warning('Parse IPv4 error:', e);
       }
     }
     return l;
@@ -162,7 +165,7 @@ class CompactAddress {
           l.add(a);
         }
       } catch (e) {
-        log('Parse IPv4 error:', error: e, name: 'COMMON LIB');
+        _log.warning('Parse IPv4 error:', e);
       }
     }
     return l;

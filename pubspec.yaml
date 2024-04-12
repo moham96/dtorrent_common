@@ -10,3 +10,5 @@ environment:
 dev_dependencies:
   test: ^1.14.4
   lints: ^2.0.1
+dependencies:
+  logging: ^1.2.0
