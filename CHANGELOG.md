@@ -13,3 +13,6 @@
 
 ## 1.0.5
 - fix issue tracker url
+
+## 1.0.6
+- use logging package
