@@ -16,3 +16,6 @@
 
 ## 1.0.6
 - use logging package
+
+## 1.0.7
+- the toHexString can work with any iterable
